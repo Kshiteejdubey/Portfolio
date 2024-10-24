@@ -1,0 +1,194 @@
+.service_container {
+    background: rgb(240, 248, 255);
+    width: 80%;
+    padding-left: 6%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card{
+    animation-duration: 1s;
+    animation-name: movingbox;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(145, 192, 255, 0.5) 3px 3px 68px 0px, rgba(145, 192, 255, 0.6) -8px -8px 11px 0px inset, rgb(255, 255, 255) 0px 11px 8px 0px inset;
+    height: 290px;
+    position: relative;
+    width: 300px;
+    z-index: 4;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+}
+.card::before{
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    background-color: rgb(57, 153, 83);
+    background-image: linear-gradient(rgb(40, 40, 86), rgb(255, 255, 255)), linear-gradient(rgb(77, 185, 253), rgb(255, 255, 255)), linear-gradient(rgb(238, 137, 54), rgb(255, 255, 255)), linear-gradient(rgb(8, 209, 95), rgb(241, 246, 255));
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    content: "";
+    height: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    width: 200%;
+    z-index: 1;
+    animation: 4s linear 0s infinite normal none running rotate;
+    background-position: 0px 0px, 100% 0px, 100% 100%, 0px 100%;
+}
+@keyframes movingbox {
+    0% {
+    opacity: 0;
+    transform: scale(1.2);
+}
+}
+@keyframes rotate{
+   100% {
+    transform: rotate(1turn);
+}  
+}
+.card::after{
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    content: "";
+    height: calc(100% - 12px);
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: calc(100% - 12px);
+    z-index: 3;
+    animation: 3s ease 0s infinite alternate none running opacityChange;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+@keyframes running{
+    50% {
+    opacity: 1;
+}
+
+100% {
+    opacity: 1;
+}
+}
+
+.card_container{
+    display:flex;
+
+}
+.service_card {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 5%;
+}
+.card h3{
+    z-index: 6;
+    position: relative;
+}
+.card_des {
+    z-index: 8;
+    position: relative;
+    font-size: 15px;
+    line-height: 30px;
+    color: #5d5a5a;
+}
+.card_img{
+    z-index: 6;
+    position: relative;
+}
+.card_info_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+.service_txt{
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-family: "Jost", sans-serif;
+}
+.service_txt span {
+    color: royalblue;
+}
+.service_upper_txt{
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+.service_upper_txt {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    margin-top: 50px;
+    color: #6b6b6b;
+    font-family: "Jost", sans-serif;
+}
+.bg1{
+    position:absolute;
+    top:80px;
+    left:0px;
+}
+.bg2{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    rotate:120deg
+}
+.bg3{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+@media(max-width:601px){
+    .service_card {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service_container{
+        overflow: unset;
+        height: max-content;
+        padding-left: unset;
+        overflow: unset;
+        height: max-content;
+        padding-left: unset;
+        position: absolute;
+        width:100%;
+    }
+    }
+    .service_upper_txt {
+        font-size: 14px;
+    line-height: 30px;
+    margin-top: 25px;
+    z-index: 22;
+    position: relative;
+    left:13vw;
+    }
+    .service_txt {
+        font-size: 28px;
+        letter-spacing: 0.3px;
+        line-height: 30px;
+        margin-top: 3px;
+        position: relative;
+        text-align: center;
+    }
+    .card{
+        height: 260px;
+        position: relative;
+        width: 260px;
+    }
+    .card_info_container{
+        gap: 9px;
+    }
+    
+}

@@ -1,0 +1,255 @@
+
+    .about_container {
+        width: 80%;
+        overflow-y: scroll;
+        background-color: #effbf8;
+        padding-bottom: 40px;
+        height: 100vh;
+        /* overflow: scroll; */
+    }
+
+.about_container_inside {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.left_about_container {
+    width: 35%;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.right_about_container {
+    width: 60%;
+}
+p.nicetomeet {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    margin-top: 25px;
+    color: #040451;
+}
+p.name_about {
+    color: #130f49;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+    font-family: "Jost", sans-serif;
+    width: 110%;
+}
+.gotaproject button {
+    background-color: rgb(40, 40, 86);
+    color: rgb(240, 248, 255);
+    font-size: 16px;
+    margin-top: 20px;
+   cursor: pointer;
+    border-radius: 8px;
+    padding: 15px 40px;
+}
+.gotaproject button:hover{
+    color: rgb(40, 40, 86);
+    background-color: rgb(240, 248, 255);
+}
+p.hellojyoti {
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+    margin: 25px 0px;
+    color: #55527c;
+    /* margin-bottom: 25px; */
+}
+p.innovative_mern {
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+    margin-top: 25px;
+    color: #55527c;
+}
+p.hellojyoti {
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+    margin: 25px 0px;
+    color: #55527c;
+    width: 90%;
+    margin: 25px auto;
+    /* margin-bottom: 25px; */
+}
+p.innovative_mern {
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+    margin-top: 25px;
+    color: #55527c;
+    width: 90%;
+    margin: 25px auto;
+}
+
+.icon_container {
+    width: 80px;
+    height: 80px;
+    box-shadow: 3px 3px 2px lightgray, -3px 0px 2px lightgray;
+    padding: 6px;
+    border-radius: 8px;
+}
+.icon_tech_name p{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.tech_desc p{
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #55527c;
+}
+.icon_img{
+    width:100%;
+    height:100%;
+}
+.skill_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.info_tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 43%;
+}
+.icon_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 25%;
+}
+.skill_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 10px;
+    width: 80%;
+    margin: auto;
+    gap: 100px;
+    border-radius: 30px;
+    background: #fff;
+    border: 1px solid hsla(0, 25%, 78%, .635);
+    box-shadow: 3px 4px 2px lightgray;
+}
+.skill_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 10px;
+    width: 80%;
+    gap: 70px;
+    background: #fff;
+    border: 1px solid hsla(0, 25%, 78%, .635);
+}
+.skill_container p
+    {
+        color: #55527c;
+        font-family: karla, sans-serif;
+        font-family: var(--main-font);
+        font-size: 16px;
+        letter-spacing: .3px;
+        line-height: 30px;
+       
+    }
+    .tech_stack_txt {
+        width: 80%;
+        margin: 0px auto 20px;
+    }
+    .tech_stack_txt .techstack{
+        color: #130f49;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5px;
+    }
+    @media(max-width:601px){
+        .about_container{
+     width:100%;
+     position: absolute;
+        }
+        .about_container_inside {
+            flex-direction: column
+          
+        }
+        .left_about_container{
+            width: 90%;
+        }
+        p.name_about {
+            width: 98%;
+        }
+        .gotaproject{
+            margin-top: -20px;
+        }
+        p.nicetomeet{
+            margin-top: unset;
+        }
+        .right_about_container {
+            width: 85%;
+        }
+        p.hellojyoti{
+            width:100%;
+            margin:2px auto;
+        }
+        p.innovative_mern{
+            width: 100%;
+            margin: 14px auto;
+        }
+        .skill_img_container{
+            width:90%;
+        } 
+        .gotaproject button{
+            margin-top: 10px;
+    padding: 10px 40px;
+        }
+        .skill_img_container{
+            gap: 30px;
+        } 
+        .icon_container {
+            width: 60px;
+            height: 60px;
+        }
+        .icon_card_container{
+            width: 100%;
+    margin-left: 10%;
+    justify-content: flex-start;
+        }
+        .skill_container p {
+            font-size: 20px;
+    line-height: 25px;
+        }
+        .tech_desc p{
+            font-size:16px;
+        }
+        .tech_stack_txt p{
+            font-size: 15px;
+        }
+        .tech_stack_txt .techstack {
+            font-size: 22px;
+        }
+        .info_tech{
+            align-items: flex-start;
+        }
+      }
